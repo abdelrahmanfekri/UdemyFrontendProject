@@ -1,0 +1,170 @@
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+a:link {
+  color: black;
+}
+
+a:hover {
+  color: blue;
+}
+
+input:focus {
+  outline: none;
+}
+.phone {
+  display: none;
+}
+.navBar {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  position: sticky;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 2px 2px lightgray;
+}
+#navIcon {
+  display: inline;
+}
+.firstHeader {
+  margin: auto;
+  width: 90%;
+  height: 400px;
+  display: flex;
+  background-color: rgba(203, 202, 202, 0.11);
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column-reverse;
+  box-shadow: 1px 1px 1px 1px lightgray;
+}
+.newUdemy {
+  background-color: white;
+  width: 100%;
+  padding-left: 30px;
+}
+.secondHeader {
+  margin: auto;
+  width: 90%;
+}
+#exploreBtn {
+  background-color: white;
+  border: 1px solid gray;
+  padding: 10px;
+}
+#exploreBtn:hover{
+  box-shadow:2px 2px 2px gray;
+}
+.courses{
+  border:1px solid gray;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+}
+.coursesContent{
+  width:260px;
+  display: block;
+  padding:8px;
+}
+#displayCourses{
+  display: flex;
+  flex-wrap:wrap;
+  margin:auto;
+  justify-content:center;
+}
+.footer{
+  width:100%;
+  height:200px;
+  background-color:gray;
+}
+
+@media screen and (min-width: 600px) {
+  .firstHeader {
+    margin: auto;
+    width: 90%;
+    height: 400px;
+    display: flex;
+    background-color: rgba(203, 202, 202, 0.11);
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+  .newUdemy {
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    padding-left: 20px;
+  }
+  .navBar {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #navIcon {
+    display: none;
+  }
+  .phone {
+    display: inline;
+  }
+  #searchForm {
+    display: inline;
+    border: 2px solid gray;
+    border-radius: 20px;
+    width: 50%;
+    background-color: rgba(246, 242, 242, 0.881);
+    padding: 5px 10px 5px 10px;
+  }
+  #searchId {
+    display: inline;
+    background-color: rgba(246, 242, 242, 0.881);
+    width: 80%;
+  }
+  #login {
+    display: inline;
+    background-color: white;
+    border: 1px solid gray;
+    position: relative;
+    padding: 5px 10px 5px 10px;
+  }
+  #login:hover {
+    background-color: rgb(238, 232, 232);
+  }
+  #signUp {
+    display: inline;
+    color: white;
+    background-color: black;
+    padding: 5px 10px 5px 10px;
+  }
+  #signUp:hover {
+    color: black;
+    background-color: white;
+  }
+
+  #langBtn {
+    display: inline;
+    font-size: 16px;
+    border: 1px solid gray;
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+  }
+  #langBtn:hover {
+    background-color: rgb(238, 232, 232);
+  }
+  #shoppingCart {
+    display: inline;
+    background-color: white;
+    border: 0px;
+    font-size: 25px;
+  }
+  .hoverBlue:hover {
+    color: blue;
+  }
+}

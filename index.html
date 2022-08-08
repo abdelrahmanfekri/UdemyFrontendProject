@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="navbar" class="navBar">
+      <button
+        id="navIcon"
+        style="border: 0px; background-color: white; font-size: 25px"
+      >
+        <i class="fa fa-navicon"></i>
+      </button>
+      <img id="logo" href="#" src="logo.png" width="100px" />
+      <a href="#" class="phone">categories</a>
+      <form id="searchForm" class="phone">
+        <button
+          type="submit"
+          id="searchIcon"
+          style="border: 0px; background-color: rgba(246, 242, 242, 0.881)"
+        >
+          <i class="fa fa-search"></i>
+        </button>
+        <input
+          type="search"
+          name="search"
+          id="searchId"
+          placeholder="Search for anything"
+          style="border: 0px"
+        />
+      </form>
+      <a href="#" class="phone"> Udemy Business </a>
+      <a href="#" class="hoverBlue phone"> Teach on Udemy </a>
+      <button id="shoppingCart" class="hoverBlue phone">
+        <i class="fa fa-shopping-cart hoverBlue"></i>
+      </button>
+      <div>
+        <button id="login" class="phone">Login</button>
+        <button id="signUp" class="phone">Sign up</button>
+      </div>
+      <a href="#" id="langBtn" class="phone">
+        <i class="fa fa-globe"></i>
+      </a>
+    </nav>
+    <main>
+      <div class="firstHeader">
+        <div class="newUdemy">
+          <h1>New to Udemy?Lucky you.</h1>
+          <p>
+            Courses start at 169.99 EGP. Get you new-student offer before it
+            expires.
+          </p>
+        </div>
+        <div>
+          <img alt="alarm Image time to start" src="alarm.png" id="alarmImg" />
+        </div>
+      </div>
+    </main>
+    <main class="secondHeader">
+      <h2>A broad selection of courses</h2>
+      <p>
+        Choose from 185000 online video courses with new additions published
+        every month
+      </p>
+      <section id="selections">
+        <a href="#" style="font-size: 12px; padding: 10px"><b>Python</b></a>
+        <a href="#" style="font-size: 12px; padding: 10px"><b>Excel</b></a>
+        <a href="#" style="font-size: 12px; padding: 10px"
+          ><b>Web Development</b></a
+        >
+        <a href="#" style="font-size: 12px; padding: 10px"><b>JavaScript</b></a>
+        <a href="#" style="font-size: 12px; padding: 10px"
+          ><b>Data Science</b></a
+        >
+        <a href="#" style="font-size: 12px; padding: 10px"
+          ><b>AWS Certification</b></a
+        >
+        <a href="#" style="font-size: 12px; padding: 10px"><b>Drawing</b></a>
+      </section>
+      <section class="courses">
+        <h3>Expand your career opportunities with Python</h3>
+        <p>
+          Take one of Udemy's range of Python courses and learn how to code
+          using this incredibly useful language. Its simple syntax and
+          readability makes Python perfect for Flask, Django , data science, and
+          machine learning. You'll learn how to build everything from games to
+          sites to apps. Choose from a range of courses that will appeal to..
+        </p>
+        <button id="exploreBtn" style="width: 150px;"><b>Explore Python</b></button>
+        <div id="displayCourses">
+          <div class="coursesContent">
+            <img src="course1.png" alt="course Logo" />
+            <figcaption>
+              <b> Learn Python:The Complete Python Programming Course </b>
+            </figcaption>
+            <p style="font-size: 12px">Avinash Jain, The Codex</p>
+            <div style="color: darkorange">
+              <span style="font-size: 20px; color: rgb(248, 165, 23)">4.4</span>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <span style="color: darkgray">(56665)</span>
+            </div>
+            <div>
+              <b id="coursePrice">500 EGP</b>
+              <span style="text-decoration: line-through">500 EGP</span>
+            </div>
+          </div>
+
+          <div class="coursesContent">
+            <img src="course2.png" alt="course Logo" />
+            <figcaption>
+              <b> Learn Python for Data Analysis and Visualization</b>
+            </figcaption>
+            <p style="font-size: 12px">Avinash Jain, The Codex</p>
+            <div style="color: darkorange">
+              <span style="font-size: 20px; color: rgb(248, 165, 23)">4.4</span>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <span style="color: darkgray">(56665)</span>
+            </div>
+            <div>
+              <b id="coursePrice">500 EGP</b>
+              <span style="text-decoration: line-through">500 EGP</span>
+            </div>
+          </div>
+          <div class="coursesContent">
+            <img src="course3.png" alt="course Logo" />
+            <figcaption>
+              <b> Python for Beginners-learn Programming from scratch </b>
+            </figcaption>
+            <p style="font-size: 12px">Avinash Jain, The Codex</p>
+            <div style="color: darkorange">
+              <span style="font-size: 20px; color: rgb(248, 165, 23)">4.4</span>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <span style="color: darkgray">(56665)</span>
+            </div>
+            <div>
+              <b id="coursePrice">500 EGP</b>
+              <span style="text-decoration: line-through">500 EGP</span>
+            </div>
+          </div>
+          <div class="coursesContent">
+            <img src="course4.png" alt="course Logo" />
+            <figcaption>
+              <b> Learn Python: Python for Beginners </b>
+            </figcaption>
+            <p style="font-size: 12px">Avinash Jain, The Codex</p>
+            <div style="color: darkorange">
+              <span style="font-size: 20px; color: rgb(248, 165, 23)">4.4</span>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <span style="color: darkgray">(56665)</span>
+            </div>
+            <div>
+              <b id="coursePrice">500 EGP</b>
+              <span style="text-decoration: line-through">500 EGP</span>
+            </div>
+          </div>
+          <div class="coursesContent">
+            <img src="course5.png" alt="course Logo" />
+            <figcaption>
+              <b> Python Beyond the Casics- Object-Oriented Programming </b>
+            </figcaption>
+            <p style="font-size: 12px">Avinash Jain, The Codex</p>
+            <div style="color: darkorange">
+              <span style="font-size: 20px; color: rgb(248, 165, 23)">4.4</span>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <span style="color: darkgray">(56665)</span>
+            </div>
+            <div>
+              <b id="coursePrice">500 EGP</b>
+              <span style="text-decoration: line-through">500 EGP</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <h1 style="color: white;margin: auto;text-align: center;">This is the end of the project phase1 made by abdelrahman fekri</h1>
+    </footer>
+  </body>
+</html>
