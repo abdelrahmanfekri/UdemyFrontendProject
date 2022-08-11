@@ -17,7 +17,7 @@ input:focus {
 .phone {
   display: none;
 }
-.navBar {
+.nav-bar {
   height: 60px;
   width: 100%;
   display: flex;
@@ -25,12 +25,12 @@ input:focus {
   background-color: white;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 2px 2px 2px 2px lightgray;
+  box-shadow: 0px 3px lightgray;
 }
-#navIcon {
+#nav-icon {
   display: inline;
 }
-.firstHeader {
+.first-header {
   margin: auto;
   width: 90%;
   height: 400px;
@@ -41,21 +41,21 @@ input:focus {
   flex-direction: column-reverse;
   box-shadow: 1px 1px 1px 1px lightgray;
 }
-.newUdemy {
+.new-udemy {
   background-color: white;
   width: 100%;
   padding-left: 30px;
 }
-.secondHeader {
+.second-header {
   margin: auto;
   width: 90%;
 }
-#exploreBtn {
+#explore-btn {
   background-color: white;
   border: 1px solid gray;
   padding: 10px;
 }
-#exploreBtn:hover{
+#explore-btn:hover{
   box-shadow:2px 2px 2px gray;
 }
 .courses{
@@ -64,12 +64,12 @@ input:focus {
   display:flex;
   flex-direction:column;
 }
-.coursesContent{
+.courses-content{
   width:260px;
   display: block;
   padding:8px;
 }
-#displayCourses{
+#display-courses{
   display: flex;
   flex-wrap:wrap;
   margin:auto;
@@ -81,8 +81,8 @@ input:focus {
   background-color:gray;
 }
 
-@media screen and (min-width: 600px) {
-  .firstHeader {
+@media screen and (min-width: 700px) {
+  .first-header {
     margin: auto;
     width: 90%;
     height: 400px;
@@ -92,14 +92,14 @@ input:focus {
     align-items: center;
     flex-direction: row;
   }
-  .newUdemy {
+  .new-udemy {
     background-color: white;
     width: 300px;
     height: 200px;
     box-shadow: 1px 1px 1px 1px lightgray;
     padding-left: 20px;
   }
-  .navBar {
+  .nav-bar {
     height: 60px;
     width: 100%;
     display: flex;
@@ -108,13 +108,13 @@ input:focus {
     justify-content: space-around;
     align-items: center;
   }
-  #navIcon {
+  #nav-icon {
     display: none;
   }
   .phone {
     display: inline;
   }
-  #searchForm {
+  #search-form {
     display: inline;
     border: 2px solid gray;
     border-radius: 20px;
@@ -122,7 +122,7 @@ input:focus {
     background-color: rgba(246, 242, 242, 0.881);
     padding: 5px 10px 5px 10px;
   }
-  #searchId {
+  #search-id {
     display: inline;
     background-color: rgba(246, 242, 242, 0.881);
     width: 80%;
@@ -137,28 +137,28 @@ input:focus {
   #login:hover {
     background-color: rgb(238, 232, 232);
   }
-  #signUp {
+  #sign-up {
     display: inline;
     color: white;
     background-color: black;
     padding: 5px 10px 5px 10px;
   }
-  #signUp:hover {
+  #sign-up:hover {
     color: black;
     background-color: white;
   }
 
-  #langBtn {
+  #lang-btn {
     display: inline;
     font-size: 16px;
     border: 1px solid gray;
     background-color: white;
     padding: 5px 10px 5px 10px;
   }
-  #langBtn:hover {
+  #lang-btn:hover {
     background-color: rgb(238, 232, 232);
   }
-  #shoppingCart {
+  #shopping-cart {
     display: inline;
     background-color: white;
     border: 0px;
