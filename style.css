@@ -164,7 +164,7 @@ input:focus {
     border: 0px;
     font-size: 25px;
   }
-  .hoverBlue:hover {
+  .hover-blue:hover {
     color: blue;
   }
 }
