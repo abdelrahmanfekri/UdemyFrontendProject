@@ -34,6 +34,21 @@ async function getAllCourses(){
     return courses;
 }
 
+async function filterCourses(){
+    let filter = document.getElementById("search-id").value.toUpperCase();
+    function myFunction(e1){
+        return e1.title.toUpperCase().includes(filter);
+    }
+    let courses = allCourses.filter(myFunction);
+    displayCourses(courses);
+}
+
+function handlingFormSubmit(){
+    let form = document.getElementById('search-form');
+    form.addEventListener('submit',(Event)=>{
+        Event.preventDefault();
+    })
+}
 let allCourses;
 getAllCourses().then(courses=>{displayCourses(courses);allCourses = courses;});
-
+handlingFormSubmit();
