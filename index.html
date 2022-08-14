@@ -18,10 +18,10 @@
     <img id="logo" href="#" src="logo.png" width="100px" />
     <a href="#" class="phone">categories</a>
     <form id="search-form" class="phone">
-      <button type="submit" id="search-icon" style="border: 0px; background-color: rgba(246, 242, 242, 0.881)">
+      <button type="submit" onclick="filterCourses()" id="search-icon" style="border: 0px; background-color: rgba(246, 242, 242, 0.881)">
         <i class="fa fa-search"></i>
       </button>
-      <input type="search" name="search" id="search-id" placeholder="Search for anything" style="border: 0px" />
+      <input type="search" onfocus="document.getElementById('selections').scrollIntoView();" name="search" id="search-id" onkeyup="filterCourses()" onkeydown="filterCourses()" placeholder="Search for anything" style="border: 0px" />
     </form>
     <a href="#" class="phone"> Udemy Business </a>
     <a href="#" class="hover-blue phone"> Teach on Udemy </a>
@@ -76,107 +76,6 @@
       </p>
       <button id="explore-btn" style="width: 150px;"><b>Explore Python</b></button>
       <div id="display-courses">
-        <div class="courses-content">
-          <img src="course1.png" alt="course Logo" />
-          <figcaption>
-            <b> Learn Python:The Complete Python Programming Course </b>
-          </figcaption>
-          <p style="font-size: 12px">Avinash Jain, The Codex</p>
-          <div style="color: darkorange">
-            <span style="font-size: 20px; color: rgb(248, 165, 23)">4.4</span>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <span style="color: darkgray">(56665)</span>
-          </div>
-          <div>
-            <b id="course-price">500 EGP</b>
-            <span style="text-decoration: line-through">500 EGP</span>
-          </div>
-        </div>
-
-        <div class="courses-content">
-          <img src="course2.png" alt="course Logo" />
-          <figcaption>
-            <b> Learn Python for Data Analysis and Visualization</b>
-          </figcaption>
-          <p style="font-size: 12px">Avinash Jain, The Codex</p>
-          <div style="color: darkorange">
-            <span style="font-size: 20px; color: rgb(248, 165, 23)">4.4</span>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <span style="color: darkgray">(56665)</span>
-          </div>
-          <div>
-            <b id="course-price">500 EGP</b>
-            <span style="text-decoration: line-through">500 EGP</span>
-          </div>
-        </div>
-        <div class="courses-content">
-          <img src="course3.png" alt="course Logo" />
-          <figcaption>
-            <b> Python for Beginners-learn Programming from scratch </b>
-          </figcaption>
-          <p style="font-size: 12px">Avinash Jain, The Codex</p>
-          <div style="color: darkorange">
-            <span style="font-size: 20px; color: rgb(248, 165, 23)">4.4</span>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <span style="color: darkgray">(56665)</span>
-          </div>
-          <div>
-            <b id="course-price">500 EGP</b>
-            <span style="text-decoration: line-through">500 EGP</span>
-          </div>
-        </div>
-        <div class="courses-content">
-          <img src="course4.png" alt="course Logo" />
-          <figcaption>
-            <b> Learn Python: Python for Beginners </b>
-          </figcaption>
-          <p style="font-size: 12px">Avinash Jain, The Codex</p>
-          <div style="color: darkorange">
-            <span style="font-size: 20px; color: rgb(248, 165, 23)">4.4</span>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <span style="color: darkgray">(56665)</span>
-          </div>
-          <div>
-            <b id="course-price">500 EGP</b>
-            <span style="text-decoration: line-through">500 EGP</span>
-          </div>
-        </div>
-        <div class="courses-content">
-          <img src="course5.png" alt="course Logo" />
-          <figcaption>
-            <b> Python Beyond the Casics- Object-Oriented Programming </b>
-          </figcaption>
-          <p style="font-size: 12px">Avinash Jain, The Codex</p>
-          <div style="color: darkorange">
-            <span style="font-size: 20px; color: rgb(248, 165, 23)">4.4</span>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <span style="color: darkgray">(56665)</span>
-          </div>
-          <div>
-            <b id="course-price">500 EGP</b>
-            <span style="text-decoration: line-through">500 EGP</span>
-          </div>
-        </div>
       </div>
     </section>
   </main>
@@ -184,6 +83,7 @@
     <h1 style="color: white;margin: auto;text-align: center;">This is the end of the project phase1 made by abdelrahman
       fekri</h1>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

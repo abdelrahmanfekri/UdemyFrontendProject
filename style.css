@@ -6,7 +6,9 @@ a {
 a:link {
   color: black;
 }
-
+body{
+  margin:0px;
+}
 a:hover {
   color: blue;
 }
@@ -21,7 +23,7 @@ input:focus {
   height: 60px;
   width: 100%;
   display: flex;
-  position: sticky;
+  position: fixed;
   background-color: white;
   justify-content: space-between;
   align-items: center;
@@ -103,7 +105,7 @@ input:focus {
     height: 60px;
     width: 100%;
     display: flex;
-    position: sticky;
+    position: fixed;
     background-color: white;
     justify-content: space-around;
     align-items: center;
