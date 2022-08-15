@@ -8,7 +8,7 @@ async function displayCourses(courses) {
         while(l++<Number(course.rating)){
             rating+='<i class="fa fa-star"></i>';
         }
-        let template = `<div class="courses-content">
+        let template = `<div class="carousel-item courses-content">
         <img src=${course.image} alt="course Logo" width="100%" />
         <figcaption>
          <b> ${course.title} </b>
@@ -49,6 +49,13 @@ function handlingFormSubmit(){
         Event.preventDefault();
     })
 }
+
+async function getCategories(cat){
+    let url = "http://localhost:3000/"+cat;
+    let courses = await fetch(url).then((courses)=> courses.json()).catch(err=> console.log(err));
+    displayCourses(courses);
+}
+
 let allCourses;
 getAllCourses().then(courses=>{displayCourses(courses);allCourses = courses;});
 handlingFormSubmit();

@@ -22,7 +22,7 @@
         <i class="fa fa-search"></i>
       </button>
       <input 
-        type="search" onfocus="document.getElementById('selections').scrollIntoView();" name="search" id="search-id"  
+        type="search" onfocus="document.getElementById('second-header').scrollIntoView();" name="search" id="search-id"  
         placeholder="Search for anything" style="border: 0px" />
         <!--onkeyup="filterCourses()"onkeydown="filterCourses()"-->
     </form>
@@ -53,20 +53,20 @@
       </div>
     </div>
   </main>
-  <main class="second-header">
+  <main class="second-header" id="second-header">
     <h2>A broad selection of courses</h2>
     <p>
       Choose from 185000 online video courses with new additions published
       every month
     </p>
     <section id="selections">
-      <a href="#" style="font-size: 12px; padding: 10px"><b>Python</b></a>
-      <a href="#" style="font-size: 12px; padding: 10px"><b>Excel</b></a>
-      <a href="#" style="font-size: 12px; padding: 10px"><b>Web Development</b></a>
-      <a href="#" style="font-size: 12px; padding: 10px"><b>JavaScript</b></a>
-      <a href="#" style="font-size: 12px; padding: 10px"><b>Data Science</b></a>
-      <a href="#" style="font-size: 12px; padding: 10px"><b>AWS Certification</b></a>
-      <a href="#" style="font-size: 12px; padding: 10px"><b>Drawing</b></a>
+      <a onclick="getCategories('python');" href="#second-header" style="font-size: 12px; padding: 10px"><b>Python</b></a>
+      <a onclick="getCategories('excel');" href="#second-header" style="font-size: 12px; padding: 10px"><b>Excel</b></a>
+      <a onclick="getCategories('web');" href="#second-header" style="font-size: 12px; padding: 10px"><b>Web Development</b></a>
+      <a onclick="getCategories('js');" href="#second-header" style="font-size: 12px; padding: 10px"><b>JavaScript</b></a>
+      <a onclick="getCategories('data');" href="#second-header" style="font-size: 12px; padding: 10px"><b>Data Science</b></a>
+      <a onclick="getCategories('aws');" href="#second-header" style="font-size: 12px; padding: 10px"><b>AWS Certification</b></a>
+      <a onclick="getCategories('draw');" href="#second-header" style="font-size: 12px; padding: 10px"><b>Drawing</b></a>
     </section>
     <section class="courses">
       <h3>Expand your career opportunities with Python</h3>
@@ -78,12 +78,22 @@
         sites to apps. Choose from a range of courses that will appeal to..
       </p>
       <button id="explore-btn" style="width: 150px;"><b>Explore Python</b></button>
-      <div id="display-courses">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" id="display-courses">
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <h1 style="color: white;margin: auto;text-align: center;">This is the end of the project phase1 made by abdelrahman
+    <h1 style="color: white;margin: auto;text-align: center;">This is the footer of the project made by abdelrahman
       fekri</h1>
   </footer>
   <script src="script.js"></script>
