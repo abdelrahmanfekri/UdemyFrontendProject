@@ -3,12 +3,15 @@ a {
   color: black;
   font-size: 18px;
 }
+
 a:link {
   color: black;
 }
-body{
-  margin:0px;
+
+body {
+  margin: 0px;
 }
+
 a:hover {
   color: blue;
 }
@@ -16,9 +19,11 @@ a:hover {
 input:focus {
   outline: none;
 }
+
 .phone {
   display: none;
 }
+
 .nav-bar {
   height: 60px;
   width: 100%;
@@ -29,9 +34,11 @@ input:focus {
   align-items: center;
   box-shadow: 0px 3px lightgray;
 }
+
 #nav-icon {
   display: inline;
 }
+
 .first-header {
   margin: auto;
   width: 90%;
@@ -43,76 +50,54 @@ input:focus {
   flex-direction: column-reverse;
   box-shadow: 1px 1px 1px 1px lightgray;
 }
+
 .new-udemy {
   background-color: white;
   width: 100%;
   padding-left: 30px;
 }
+
 .second-header {
   margin: auto;
   width: 90%;
 }
+
 #explore-btn {
   background-color: white;
   border: 1px solid gray;
   padding: 10px;
 }
-#explore-btn:hover{
-  box-shadow:2px 2px 2px gray;
+
+#explore-btn:hover {
+  box-shadow: 2px 2px 2px gray;
 }
-.courses{
-  border:1px solid gray;
-  padding:20px;
-  display:flex;
+
+.courses {
+  border: 1px solid gray;
+  padding: 20px;
+  display: flex;
   flex-wrap: wrap;
 }
-.footer{
-  width:100%;
-  height:200px;
-  background-color:gray;
+
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: gray;
 }
-.carousel-inner {
-  padding: 1em;
+
+#display-courses {
+  display: inline-flex;
+  margin: auto;
+  justify-content: center;
 }
+
 .card {
-  margin: 0 0.5em;
-  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-  border: none;
+  width: 300px;
+  display: block;
+  margin: 5px;
+  box-shadow: 1px 1px 1px gray;
 }
-.carousel-control-prev,
-.carousel-control-next {
-  background-color: black;
-  width: 6vh;
-  height: 6vh;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-@media (min-width: 768px) {
-  .carousel-item {
-    margin-right: 0;
-    flex: 0 0 33.333333%;
-    display: block;
-  }
-  .carousel-inner {
-    display: flex;
-  }
-}
-.card .img-wrapper {
-    max-width: 100%;
-    height: 13em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card img {
-    max-height: 100%;
-}
-@media (max-width: 767px) {
-  .card .img-wrapper {
-    height: 17em;
-  }
-}
+
 @media screen and (min-width: 700px) {
   .first-header {
     margin: auto;
@@ -124,6 +109,7 @@ input:focus {
     align-items: center;
     flex-direction: row;
   }
+
   .new-udemy {
     background-color: white;
     width: 300px;
@@ -131,6 +117,7 @@ input:focus {
     box-shadow: 1px 1px 1px 1px lightgray;
     padding-left: 20px;
   }
+
   .nav-bar {
     height: 60px;
     width: 100%;
@@ -140,12 +127,15 @@ input:focus {
     justify-content: space-around;
     align-items: center;
   }
+
   #nav-icon {
     display: none;
   }
+
   .phone {
     display: inline;
   }
+
   #search-form {
     display: inline;
     border: 2px solid gray;
@@ -154,11 +144,13 @@ input:focus {
     background-color: rgba(246, 242, 242, 0.881);
     padding: 5px 10px 5px 10px;
   }
+
   #search-id {
     display: inline;
     background-color: rgba(246, 242, 242, 0.881);
     width: 80%;
   }
+
   #login {
     display: inline;
     background-color: white;
@@ -166,15 +158,18 @@ input:focus {
     position: relative;
     padding: 5px 10px 5px 10px;
   }
+
   #login:hover {
     background-color: rgb(238, 232, 232);
   }
+
   #sign-up {
     display: inline;
     color: white;
     background-color: black;
     padding: 5px 10px 5px 10px;
   }
+
   #sign-up:hover {
     color: black;
     background-color: white;
@@ -187,15 +182,18 @@ input:focus {
     background-color: white;
     padding: 5px 10px 5px 10px;
   }
+
   #lang-btn:hover {
     background-color: rgb(238, 232, 232);
   }
+
   #shopping-cart {
     display: inline;
     background-color: white;
     border: 0px;
     font-size: 25px;
   }
+
   .hover-blue:hover {
     color: blue;
   }
