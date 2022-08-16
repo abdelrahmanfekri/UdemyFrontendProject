@@ -3,12 +3,15 @@ a {
   color: black;
   font-size: 18px;
 }
+
 a:link {
   color: black;
 }
-body{
-  margin:0px;
+
+body {
+  margin: 0px;
 }
+
 a:hover {
   color: blue;
 }
@@ -16,9 +19,11 @@ a:hover {
 input:focus {
   outline: none;
 }
+
 .phone {
   display: none;
 }
+
 .nav-bar {
   height: 60px;
   width: 100%;
@@ -29,9 +34,11 @@ input:focus {
   align-items: center;
   box-shadow: 0px 3px lightgray;
 }
+
 #nav-icon {
   display: inline;
 }
+
 .first-header {
   margin: auto;
   width: 90%;
@@ -43,41 +50,57 @@ input:focus {
   flex-direction: column-reverse;
   box-shadow: 1px 1px 1px 1px lightgray;
 }
+
 .new-udemy {
   background-color: white;
   width: 100%;
   padding-left: 30px;
 }
+
 .second-header {
   margin: auto;
   width: 90%;
 }
+
 #explore-btn {
   background-color: white;
   border: 1px solid gray;
   padding: 10px;
 }
-#explore-btn:hover{
-  box-shadow:2px 2px 2px gray;
+
+#explore-btn:hover {
+  box-shadow: 2px 2px 2px gray;
 }
-.courses{
-  border:1px solid gray;
-  padding:20px;
-  display:flex;
+
+.courses {
+  border: 1px solid gray;
+  padding: 20px;
+  display: flex;
   flex-wrap: wrap;
 }
-.footer{
-  width:100%;
-  height:200px;
-  background-color:gray;
+
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: gray;
 }
+<<<<<<< HEAD
 .carousel-inner {
   padding: 2em;
   display: flex;
   justify-content: flex-start;
+=======
+
+#display-courses {
+  display: inline-flex;
+  margin: auto;
+  justify-content: center;
+>>>>>>> main
 }
+
 .card {
   width: 300px;
+<<<<<<< HEAD
   height: 450px;
   margin: 10px;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
@@ -113,7 +136,13 @@ input:focus {
   .card .img-wrapper {
     height: 17em;
   }
+=======
+  display: block;
+  margin: 5px;
+  box-shadow: 1px 1px 1px gray;
+>>>>>>> main
 }
+
 @media screen and (min-width: 700px) {
   .first-header {
     margin: auto;
@@ -125,6 +154,7 @@ input:focus {
     align-items: center;
     flex-direction: row;
   }
+
   .new-udemy {
     background-color: white;
     width: 300px;
@@ -132,6 +162,7 @@ input:focus {
     box-shadow: 1px 1px 1px 1px lightgray;
     padding-left: 20px;
   }
+
   .nav-bar {
     height: 60px;
     width: 100%;
@@ -141,12 +172,15 @@ input:focus {
     justify-content: space-around;
     align-items: center;
   }
+
   #nav-icon {
     display: none;
   }
+
   .phone {
     display: inline;
   }
+
   #search-form {
     display: inline;
     border: 2px solid gray;
@@ -155,11 +189,13 @@ input:focus {
     background-color: rgba(246, 242, 242, 0.881);
     padding: 5px 10px 5px 10px;
   }
+
   #search-id {
     display: inline;
     background-color: rgba(246, 242, 242, 0.881);
     width: 80%;
   }
+
   #login {
     display: inline;
     background-color: white;
@@ -167,15 +203,18 @@ input:focus {
     position: relative;
     padding: 5px 10px 5px 10px;
   }
+
   #login:hover {
     background-color: rgb(238, 232, 232);
   }
+
   #sign-up {
     display: inline;
     color: white;
     background-color: black;
     padding: 5px 10px 5px 10px;
   }
+
   #sign-up:hover {
     color: black;
     background-color: white;
@@ -188,15 +227,18 @@ input:focus {
     background-color: white;
     padding: 5px 10px 5px 10px;
   }
+
   #lang-btn:hover {
     background-color: rgb(238, 232, 232);
   }
+
   #shopping-cart {
     display: inline;
     background-color: white;
     border: 0px;
     font-size: 25px;
   }
+
   .hover-blue:hover {
     color: blue;
   }
