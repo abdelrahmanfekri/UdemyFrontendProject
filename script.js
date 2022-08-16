@@ -45,6 +45,7 @@ async function displayCourses(courses) {
         var scrollPosition = 0;
         console.log(cardWidth);
         console.log(carouselWidth);
+        document.getElementById("display-courses").scroll({ left: scrollPosition, behavior: 'smooth' });
         document.getElementById("carousel-right").addEventListener('click', function () {
             console.log("rightClicked");
             if (scrollPosition < carouselWidth - cardWidth * 3) {
