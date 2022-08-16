@@ -84,23 +84,14 @@ input:focus {
   height: 200px;
   background-color: gray;
 }
-<<<<<<< HEAD
 .carousel-inner {
   padding: 2em;
   display: flex;
   justify-content: flex-start;
-=======
-
-#display-courses {
-  display: inline-flex;
-  margin: auto;
-  justify-content: center;
->>>>>>> main
 }
 
 .card {
   width: 300px;
-<<<<<<< HEAD
   height: 450px;
   margin: 10px;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
@@ -136,11 +127,6 @@ input:focus {
   .card .img-wrapper {
     height: 17em;
   }
-=======
-  display: block;
-  margin: 5px;
-  box-shadow: 1px 1px 1px gray;
->>>>>>> main
 }
 
 @media screen and (min-width: 700px) {
