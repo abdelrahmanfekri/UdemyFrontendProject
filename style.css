@@ -72,10 +72,14 @@ input:focus {
   background-color:gray;
 }
 .carousel-inner {
-  padding: 1em;
+  padding: 2em;
+  display: flex;
+  justify-content: flex-start;
 }
 .card {
-  margin: 0 0.5em;
+  width: 300px;
+  height: 450px;
+  margin: 10px;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
   border: none;
 }
@@ -88,15 +92,12 @@ input:focus {
   top: 50%;
   transform: translateY(-50%);
 }
-@media (min-width: 768px) {
-  .carousel-item {
-    margin-right: 0;
-    flex: 0 0 33.333333%;
-    display: block;
-  }
-  .carousel-inner {
-    display: flex;
-  }
+.carousel-item {
+  margin-right: 0;
+  display: block;
+}
+.carousel-inner {
+  display: flex;
 }
 .card .img-wrapper {
     max-width: 100%;
