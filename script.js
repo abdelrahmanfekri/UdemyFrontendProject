@@ -1,4 +1,10 @@
 
+/**
+ * @description function to display courses in its section with id display courses and add event listener for carousel buttons
+ * @param {*} courses 
+ * @return void
+ */
+
 async function displayCourses(courses) {
     document.getElementById('display-courses').innerHTML = "";
     let flag = true;
@@ -67,12 +73,23 @@ async function displayCourses(courses) {
         cardCarousel.classList.add("slide")
     }
 }
+/**
+ * @description Get all courses from json-server in file called data_res in courses key
+ * @returns courses
+ */
+
 async function getAllCourses() {
     let courses = await fetch("http://localhost:3000/courses")
         .then((courses) => courses.json())
         .catch(err => console.log(err));
     return courses;
 }
+
+/**
+ * @description function add as onclick listener for submit 
+ * button in the search form to filter courses then call 
+ * function display courses to display courses in it's section
+ */
 
 async function filterCourses() {
     let filter = document.getElementById("search-id").value.toUpperCase();
@@ -82,6 +99,9 @@ async function filterCourses() {
     let courses = allCourses.filter(myFunction);
     displayCourses(courses);
 }
+/**
+ * @description Prevent the default event in submitting the form in search bar
+ */
 
 function handlingFormSubmit() {
     let form = document.getElementById('search-form');
@@ -89,6 +109,12 @@ function handlingFormSubmit() {
         Event.preventDefault();
     })
 }
+/**
+ * @description the function called when we click a link in categories section it 
+ * take parameter cat represent category then it fetch it's data from the json server
+ * then it call display courses
+ * @param {*} cat 
+ */
 
 async function getCategories(cat) {
     let url = "http://localhost:3000/" + cat;
@@ -99,4 +125,3 @@ async function getCategories(cat) {
 let allCourses;
 getAllCourses().then(courses => { displayCourses(courses); allCourses = courses; });
 handlingFormSubmit();
-
