@@ -79,7 +79,7 @@ async function displayCourses(courses) {
  */
 
 async function getAllCourses() {
-    let courses = await fetch("http://localhost:3000/courses")
+    let courses = await fetch("https://api.npoint.io/6b0e60db284f71ad6a57/courses")
         .then((courses) => courses.json())
         .catch(err => console.log(err));
     return courses;
@@ -117,7 +117,7 @@ function handlingFormSubmit() {
  */
 
 async function getCategories(cat) {
-    let url = "http://localhost:3000/" + cat;
+    let url = "https://api.npoint.io/6b0e60db284f71ad6a57/" + cat;
     let courses = await fetch(url).then((courses) => courses.json()).catch(err => console.log(err));
     displayCourses(courses);
 }
