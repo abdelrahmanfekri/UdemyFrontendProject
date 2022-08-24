@@ -7,7 +7,11 @@
 
 async function displayCourses(courses) {
     document.getElementById('display-courses').innerHTML = "";
+    var cardCarousel = document.getElementById('display-courses');
     let flag = true;
+    if (!window.matchMedia("(min-width:700px)").matches) {
+        cardCarousel.classList.add("slide");
+    }
     for (let idx in courses) {
         let course = courses[idx];
         let l = 1;
@@ -41,37 +45,32 @@ async function displayCourses(courses) {
       </div>`;
         document.getElementById('display-courses').innerHTML += template;
     }
-    var cardCarousel = document.querySelector("#display-courses");
-    if (window.matchMedia("(min-width:700px)").matches) {
-        var carousel = new bootstrap.Carousel(cardCarousel, {
-            interval: false,
-        })
-        var carouselWidth = Number(document.getElementById("display-courses").scrollWidth);
-        var cardWidth = Number(document.getElementsByClassName("carousel-item")[0].clientWidth);
-        var scrollPosition = 0;
-        console.log(cardWidth);
-        console.log(carouselWidth);
-        document.getElementById("display-courses").scroll({ left: scrollPosition, behavior: 'smooth' });
-        document.getElementById("carousel-right").addEventListener('click', function () {
-            console.log("rightClicked");
-            if (scrollPosition < carouselWidth - cardWidth * 3) {
-                scrollPosition += cardWidth;
-                console.log("scrollPosition", scrollPosition);
-                document.getElementById("display-courses").scroll({ left: scrollPosition, behavior: 'smooth' });
-            }
-        });
-        document.getElementById("carousel-left").addEventListener('click', function () {
-            console.log("leftClicked");
-            if (scrollPosition > 0) {
-                scrollPosition -= cardWidth;
-                console.log("scrollPosition", scrollPosition);
-                document.getElementById("display-courses").scroll({ left: scrollPosition, behavior: 'smooth' });
-            }
-        });
-    }
-    else {
-        cardCarousel.classList.add("slide")
-    }
+    var carousel = new bootstrap.Carousel(cardCarousel, {
+        interval: false,
+    });
+    var carouselWidth = Number(document.getElementById("display-courses").scrollWidth);
+    var cardWidth = Number(document.getElementsByClassName("carousel-item")[0].clientWidth);
+    var scrollPosition = 0;
+    console.log(cardWidth);
+    console.log(carouselWidth);
+    document.getElementById("display-courses").scroll({ left: scrollPosition, behavior: 'smooth' });
+    document.getElementById("carousel-right").addEventListener('click', function () {
+        console.log("rightClicked");
+        if (scrollPosition < carouselWidth - cardWidth * 3) {
+            scrollPosition += cardWidth;
+            console.log("scrollPosition", scrollPosition);
+            document.getElementById("display-courses").scroll({ left: scrollPosition, behavior: 'smooth' });
+        }
+    });
+    document.getElementById("carousel-left").addEventListener('click', function () {
+        console.log("leftClicked");
+        if (scrollPosition > 0) {
+            scrollPosition -= cardWidth;
+            console.log("scrollPosition", scrollPosition);
+            document.getElementById("display-courses").scroll({ left: scrollPosition, behavior: 'smooth' });
+        }
+    });
+
 }
 /**
  * @description Get all courses from json-server in file called data_res in courses key
